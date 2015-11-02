@@ -1,0 +1,51 @@
+﻿Build started 11/30/2014 10:24:34 PM.
+     1>Project "E:\prog\cpp\transconsciousness\transconsciousness\transconsciousness.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\transconsciousness.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt sys.cpp
+         sys.cpp
+     1>e:\prog\cpp\transconsciousness\transconsciousness\sys.cpp(272): warning C4800: 'Uint8' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\prog\cpp\transconsciousness\transconsciousness\sys.cpp(292): warning C4800: 'Uint32' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\prog\cpp\transconsciousness\transconsciousness\sys.cpp(324): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>e:\prog\cpp\transconsciousness\transconsciousness\sys.cpp(393): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\prog\cpp\transconsciousness\transconsciousness\sys.cpp(413): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\prog\cpp\transconsciousness\Debug\transconsciousness.exe" /NOLOGO SDL2.lib SDL2main.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\transconsciousness.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\prog\cpp\transconsciousness\Debug\transconsciousness.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\prog\cpp\transconsciousness\Debug\transconsciousness.lib" /MACHINE:X86 Debug\animation.obj
+         Debug\civilian.obj
+         Debug\collision.obj
+         Debug\commandqueue.obj
+         Debug\component.obj
+         Debug\damagemessage.obj
+         Debug\defeatondelete.obj
+         Debug\engine.obj
+         Debug\gameobject.obj
+         Debug\guiobject.obj
+         Debug\habe.obj
+         Debug\habecrawler.obj
+         Debug\isometric.obj
+         Debug\level.obj
+         Debug\leveldata.obj
+         Debug\leveldata1.obj
+         Debug\main.obj
+         Debug\message.obj
+         Debug\particlesystem.obj
+         Debug\player.obj
+         Debug\rect.obj
+         Debug\slashanimation.obj
+         Debug\sprite.obj
+         Debug\stats.obj
+         Debug\sys.obj
+         Debug\tilemap.obj /NODEFAULTLIB:msvcrt.lib 
+         LINK : E:\prog\cpp\transconsciousness\Debug\transconsciousness.exe not found or not built by the last incremental link; performing full link
+         transconsciousness.vcxproj -> E:\prog\cpp\transconsciousness\Debug\transconsciousness.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\prog\cpp\transconsciousness\Debug\transconsciousness.exe;#1" /manifest Debug\transconsciousness.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\transconsciousness.unsuccessfulbuild".
+         Touching "Debug\transconsciousness.lastbuildstate".
+     1>Done Building Project "E:\prog\cpp\transconsciousness\transconsciousness\transconsciousness.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.62

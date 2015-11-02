@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{22A85AE2-8B4F-4ED8-8810-BC47399F89D8}</ProjectGuid>
+    <RootNamespace>transconsciousness</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include;C:\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86;C:\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include;C:\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86;C:\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="animation.cpp" />
+    <ClCompile Include="civilian.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="commandqueue.cpp" />
+    <ClCompile Include="component.cpp" />
+    <ClCompile Include="damagemessage.cpp" />
+    <ClCompile Include="defeatondelete.cpp" />
+    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="gameobject.cpp" />
+    <ClCompile Include="guiobject.cpp" />
+    <ClCompile Include="habe.cpp" />
+    <ClCompile Include="habecrawler.cpp" />
+    <ClCompile Include="isometric.cpp" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="leveldata.cpp" />
+    <ClCompile Include="leveldata1.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="message.cpp" />
+    <ClCompile Include="particlesystem.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="rect.cpp" />
+    <ClCompile Include="slashanimation.cpp" />
+    <ClCompile Include="sprite.cpp" />
+    <ClCompile Include="stats.cpp" />
+    <ClCompile Include="sys.cpp" />
+    <ClCompile Include="tilemap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="civilian.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="commandqueue.h" />
+    <ClInclude Include="component.h" />
+    <ClInclude Include="damagemessage.h" />
+    <ClInclude Include="defeatondelete.h" />
+    <ClInclude Include="doneplanningbutton.h" />
+    <ClInclude Include="engine.h" />
+    <ClInclude Include="exitbutton.h" />
+    <ClInclude Include="gameobject.h" />
+    <ClInclude Include="guiobject.h" />
+    <ClInclude Include="habe.h" />
+    <ClInclude Include="habecrawler.h" />
+    <ClInclude Include="isometric.h" />
+    <ClInclude Include="deathmessage.h" />
+    <ClInclude Include="level.h" />
+    <ClInclude Include="leveldata.h" />
+    <ClInclude Include="message.h" />
+    <ClInclude Include="movecommandbutton.h" />
+    <ClInclude Include="particlesystem.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="pushcommandmessage.h" />
+    <ClInclude Include="queryhabetargetmessage.h" />
+    <ClInclude Include="rect.h" />
+    <ClInclude Include="shootcommandbutton.h" />
+    <ClInclude Include="slashanimation.h" />
+    <ClInclude Include="slashcommandbutton.h" />
+    <ClInclude Include="sprite.h" />
+    <ClInclude Include="startbutton.h" />
+    <ClInclude Include="statebutton.h" />
+    <ClInclude Include="stats.h" />
+    <ClInclude Include="sys.h" />
+    <ClInclude Include="tilemap.h" />
+    <ClInclude Include="vec2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
