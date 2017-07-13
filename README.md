@@ -3,6 +3,8 @@ Transconsciousness
 ==================
 MiniLD 55 - Preparation
 
+https://www.youtube.com/watch?v=VLi7HU0GfNg
+
 IMPORTANT:
 The program is contained in /windows-build. For some reason sound is unstable.
 It will run perfectly fine most of the time but occasionally it will crash.
