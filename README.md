@@ -1,8 +1,7 @@
-******************************************
-*           Transconsciousness           *
-*         MiniLD 55 - Preparation        *
-*                 ReadMe                 *
-******************************************
+
+Transconsciousness
+==================
+MiniLD 55 - Preparation
 
 IMPORTANT:
 The program is contained in /windows-build. For some reason sound is unstable.
@@ -60,8 +59,8 @@ If anyone experiances this bug or knows how to fix it please let me know. Thank 
 
 Contact: ynjdev@gmail.com
 
-==========
+
 CHANGE LOG
 ==========
-12/3/2014
+12/3/2014:
 Fixed bug where the shooting animation doesn't draw if your shot misses
