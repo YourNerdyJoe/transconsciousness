@@ -1,0 +1,10 @@
+ipch/*
+Debug/*
+Release/*
+transconsciousness/Debug/*
+transconsciousness/Release/*
+transconsciousness/build/*
+
+*.opensdf
+*.suo
+
